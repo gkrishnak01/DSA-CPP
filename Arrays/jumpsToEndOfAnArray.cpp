@@ -16,7 +16,7 @@ int jumps(int arr[],int size)
 
 int main()
 {
-    int arr[] = {1,3,4,2,6,7};
+    int arr[] = {1,4,3,2,6,7};
     int size = sizeof(arr) / sizeof(arr[0]);
     cout<<jumps(arr,size);
     return 0;
