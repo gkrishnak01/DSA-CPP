@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s/0
+
 #include<iostream>
 
 using namespace std;
@@ -41,21 +43,21 @@ void sort(int arr[], int size)
         {
             swap(&arr[i],&arr[k]);
             i++;
-            k--;
         }
         else if(arr[k] == 2)
         {
             swap(&arr[k],&arr[j]);
             j--;
             k--;
-        }  
+        } 
+         
     }
 }
 
 
 int main()
 {
-    int arr[] = {2,1,2,1,0,1,2,1,0,2,1,0,1};
+    int arr[] = {0,1,2,1,0,1,2,1,0,2,1,0,0};
     int size = sizeof(arr) / sizeof(arr[0]);
     sort(arr,size);
     printArray(arr,size);
