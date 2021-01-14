@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>  
 
 using namespace std;
 
@@ -6,6 +6,7 @@ int jumps(int arr[],int size)
 {
     int jumps = 0;
     int i = 0;
+
     while(i < size - 1)
     {   
         jumps++;
